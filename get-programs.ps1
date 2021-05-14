@@ -1,0 +1,1 @@
+Get-WmiObject -Class win32_product | select-object name,version | export-csv -path ./programs.csv

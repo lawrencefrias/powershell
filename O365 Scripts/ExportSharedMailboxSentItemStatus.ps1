@@ -1,0 +1,1 @@
+﻿Get-Mailbox -RecipientTypeDetails SharedMailbox -ResulSize:Unlimited | Select-Object Identity,WindowsEmailAddress,MessageCopyForSentAsEnabled,MessageCopyForSendOnBehalfEnabled | Export-Csv C:\Temp\sharedfolders.csv -NoTypeInformation

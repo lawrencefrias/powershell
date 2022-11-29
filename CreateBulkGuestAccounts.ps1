@@ -2,7 +2,7 @@ $invitations = import-csv c:\bulkinvite\invitations.csv
 
 $messageInfo = New-Object Microsoft.Open.MSGraph.Model.InvitedUserMessageInfo
 
-$messageInfo.customizedMessageBody = "Hello. You are invited to the Tilray organization."
+$messageInfo.customizedMessageBody = "Hello. You are invited to the <Name> organization."
 
 foreach ($email in $invitations)
    {New-AzureADMSInvitation `
